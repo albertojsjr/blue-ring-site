@@ -11,3 +11,20 @@
 .foot>div:first-child>a{display:flex;justify-content:center}
 .foot>div:first-child img{display:block;margin:0 auto}
 @media(max-width:700px){.hero-bg-video{display:none}.hero-video{background:linear-gradient(135deg,#07182f,#0a2b5c)}}
+
+/* Hero refinado: marca apenas no cabeçalho/rodapé */
+.hero-content{position:relative;z-index:2}
+.hero-copy{max-width:780px}
+.hero-video .hero-content{display:block}
+/* Formulário de cotação */
+.quote-form{margin-top:28px;padding:28px;border:1px solid #dbe3ef;border-radius:18px;background:#fff;box-shadow:0 12px 34px rgba(10,29,61,.07)}
+.quote-form label{display:block;margin-bottom:18px;font-weight:700;color:#0A1D3D}
+.quote-form label span{color:#0066FF}
+.quote-form input,.quote-form textarea{box-sizing:border-box;width:100%;margin-top:8px;border:1px solid #cbd5e1;border-radius:10px;padding:13px 14px;font:inherit;color:#0A1D3D;background:#fff;outline:none;transition:border-color .2s,box-shadow .2s}
+.quote-form textarea{resize:vertical;min-height:150px}
+.quote-form input:focus,.quote-form textarea:focus{border-color:#0066FF;box-shadow:0 0 0 3px rgba(0,102,255,.12)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-note{font-size:.86rem;color:#64748b;margin:12px 0 0}
+.form-trap{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important}
+.contact-direct{margin-top:34px;padding-top:26px;border-top:1px solid #e2e8f0}
+@media(max-width:700px){.form-grid{grid-template-columns:1fr}.quote-form{padding:20px}}
